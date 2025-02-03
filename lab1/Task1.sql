@@ -2,3 +2,5 @@ CREATE TABLE MyTable (
     id NUMBER,
     val NUMBER
 );
+
+DROP TABLE MYTABLE

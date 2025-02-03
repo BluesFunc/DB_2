@@ -1,4 +1,8 @@
-CREATE OR REPLACE FUNCTION calculate_total_salary(p_monthly_salary NUMBER, p_annual_bonus_percentage NUMBER) RETURN NUMBER IS
+CREATE OR REPLACE FUNCTION 
+    calculate_total_salary(
+        p_monthly_salary NUMBER, 
+        p_annual_bonus_percentage NUMBER
+        ) RETURN NUMBER IS
     v_total_salary NUMBER;
 BEGIN
 
@@ -27,7 +31,7 @@ DECLARE
     v_salary NUMBER;
 BEGIN
 
-    v_salary := calculate_total_salary(50000, 10);  -- Месячная зарплата = 50000, процент премиальных = 10%
+    v_salary := calculate_total_salary(60000, 10);  
 
 
     DBMS_OUTPUT.PUT_LINE('Общее вознаграждение за год: ' || v_salary);
